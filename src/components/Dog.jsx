@@ -3,7 +3,7 @@ import{Canvas, useThree}from'@react-three/fiber';
 import { OrbitControls ,useGLTF} from '@react-three/drei';
 
 const Dog = () => {
-
+// animation 3d add
   const model  = useGLTF('/models/dog.drc.glb');
    
 
