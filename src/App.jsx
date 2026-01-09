@@ -3,16 +3,28 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Dog from './components/Dog'
- import { Canvas } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 function App() {
 
 
   return (
     <>
-    <Canvas>
-             <Dog/>
+      <main>
+        <Canvas style={{ height: '100vh', width: '100vw' ,position:'fixed',top:0,left:0,
+          zIndex:1,
+          backgroundImage:"url(/background-l.png)",
+          backgroundRepeat:"no-repeat",
+          backgroundSize:"cover",
+       
+        }}>
+        <Dog />
 
-      </Canvas> 
+        </Canvas>
+        <section id='section-1'></section>
+        <section id='section-2'></section>
+        <section id='section-3'></section>
+      </main>
+
     </>
   )
 }

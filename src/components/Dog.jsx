@@ -26,18 +26,26 @@ const Dog = () => {
   // })
   const [
     normalMap,
-    sampleMatCap,branchMap,branchNormalMap
+    sampleMatCap
   ] = useTexture([
     '/dog_normals.jpg',
     '/matcap/mat-2.png',
-    '/branches_diffuse.jpg',
-    '/branches_normals.jpg',
     
   ]).map(texture => {
     texture.flipY = false;
     texture.colorSpace = THREE.SRGBColorSpace;
     return texture;
   })
+
+  const [ branchMap, branchNormalMap ] = useTexture([
+    '/branches_diffuse.jpg',
+    '/branches_normals.jpg',
+
+  ]).map(texture => {
+   
+    texture.colorSpace = THREE.SRGBColorSpace;
+    return texture;
+  });
 
   const dogMaterial = new THREE.MeshMatcapMaterial({
     normalMap: normalMap,
@@ -66,7 +74,7 @@ const branchMaterial = new THREE.MeshMatcapMaterial({
 
 
       <directionalLight position={[0, 5, 5]} color={0xffffff} intensity={10} />
-      <OrbitControls />
+  
     </>
   )
 }
