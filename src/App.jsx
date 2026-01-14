@@ -48,6 +48,27 @@ function App() {
               <i className="ri-menu-3-line"></i>
             </div>
           </nav>
+
+          <div className='middle'>
+             <div className='left'>
+              <h1>WE <br/> Make <br /> Good <br /> Shit</h1>
+             </div>
+             <div className='right'></div>
+          </div>
+          <div className="buttom">
+            <div className="left">
+
+            </div>
+            <div className="right">
+              <p>Dogstudio is a multidisciplinary <br/>
+creative studio at the intersection<br/>
+of art, design and technology.</p>
+            </div>
+          </div>
+      <div className='first-line'>
+        
+      </div>
+
           </section>
         <section id='section-2'></section>
         <section id='section-3'></section>
