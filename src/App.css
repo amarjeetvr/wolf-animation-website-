@@ -87,7 +87,8 @@ section {
       align-items: center;
       justify-content: flex-end;
       padding-block: 6rem;
-    }
+      
+       }
 
     h1 {
       font-size: 5rem;
@@ -175,5 +176,24 @@ padding-block: 8rem;
 }
 
 main:has(#section-2 .title:hover) #canvas-elem::after{
+  opacity: 0;
+}
+
+.images{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+position:absolute;
+  top:0;
+  left:0;
   opacity: 0;
 }
