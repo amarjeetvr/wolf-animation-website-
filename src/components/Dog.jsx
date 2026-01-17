@@ -97,9 +97,9 @@ const Dog = () => {
     })
 
     const material = useRef({
-      uMatcap1: {value: mat2},
-      uMatcap2: {value: mat19},
-      uProgress: {value: 0.3}
+      uMatcap1: {value: mat19},
+      uMatcap2: {value: mat2},
+      uProgress: {value: 1.0}
     })
   const dogMaterial = new THREE.MeshMatcapMaterial({
     normalMap: normalMap,
@@ -192,6 +192,19 @@ const Dog = () => {
       }, "third")
 
   }, []);
+
+  useEffect(() =>{
+   document.querySelector(`.title[img-title="tomorrowland"]`).addEventListener("mouseenter", () => {
+        gsap.to(material.current.uProgress, {
+            value: 0.0,
+            duration: 0.3,
+           onComplete:() =>{
+            material.current.uMatcap2.value = material.current.uMatcap1.value
+            material.current.uProgress.value = 1.0
+           }
+        })
+    })
+  },[])
 
 
 
