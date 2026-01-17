@@ -146,7 +146,7 @@ section {
     display: flex;
     flex-direction: column;
     padding-left: 8rem;
-padding-block: 8rem;
+margin-block: 10rem;
   }
 
 
