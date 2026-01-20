@@ -116,7 +116,32 @@ function App() {
 
           </div>
         </section>
-        <section id='section-3'></section>
+        <section id='section-3'>
+          <div className="top">
+            <div className="left">
+              <h3>
+                Lorem ipsum dolor <br /> sit amet <br /> consectetur adipisicing <br />elit. Doloribus
+              </h3>
+            </div>
+            <div className="right">
+
+            </div>
+          </div>
+        
+        </section>
+        <section id="section-4">
+            <div className="buttom">
+            <div className="left">
+
+            </div>
+            <div className="right">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas omnis ad perferendis et esse. Voluptates nostrum alias ad porro mollitia placeat doloribus, perspiciatis unde fuga provident illum cum harum. Reiciendis modi quas ipsum laudantium vero! Ducimus aut debitis, quaerat inventore, saepe quia sed ut soluta esse officiis voluptates tempora neque!
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum in veniam neque provident commodi dolores recusandae! Ab quisquam sapiente quibusdam ut neque, temporibus illum eveniet, facilis qui at possimus quasi ratione. Quod, natus quidem. Corporis nostrum quidem iure cupiditate. Quibusdam earum sequi quam dolorem accusantium obcaecati dolores molestias et!</p>
+            </div>
+          </div>
+        </section>
       </main>
 
     </>
