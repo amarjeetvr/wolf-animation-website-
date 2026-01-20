@@ -68,7 +68,7 @@ function App() {
 
             </div>
             <div className="right">
-              <p>Dogstudio is a multidisciplinary <br />
+              <p>Dog studio is a multidisciplinary <br />
                 creative studio at the intersection<br />
                 of art, design and technology.</p>
             </div>
